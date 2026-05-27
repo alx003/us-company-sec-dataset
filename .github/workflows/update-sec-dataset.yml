@@ -1,0 +1,39 @@
+name: Update SEC Dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sec-dataset:
+    runs-on: macos-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Build DuckDB dataset from SEC
+        run: python scripts/run_pipeline.py --config config/repo_pipeline.yml
+
+      - name: Export git-friendly dataset files
+        run: python scripts/export_git_dataset.py --database outputs/us_company_research.duckdb --output-dir dataset
+
+      - name: Commit refreshed dataset
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update SEC research dataset"
+          file_pattern: "dataset/*.csv dataset/manifest.json outputs/workbook_field_inventory.csv outputs/workbook_validation.csv"

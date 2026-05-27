@@ -1,0 +1,27 @@
+inputs:
+  master_workbook: ""
+  dashboard_workbook: ""
+  manual_company_seed: "data/seeds/manual_companies.csv"
+
+outputs:
+  database: "outputs/us_company_research.duckdb"
+  parquet_dir: "outputs/parquet"
+  excel_export: "outputs/us_company_research_export.xlsx"
+  workbook_inventory: "outputs/workbook_field_inventory.csv"
+  validation_export: "outputs/workbook_validation.csv"
+
+cache:
+  dir: "cache/sec"
+  company_tickers_url: "https://www.sec.gov/files/company_tickers_exchange.json"
+  submissions_bulk_url: "https://www.sec.gov/Archives/edgar/daily-index/bulkdata/submissions.zip"
+  companyfacts_bulk_url: "https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip"
+
+sec:
+  user_agent: "alx003 SEC research dataset contact@example.com"
+  forms: ["10-K", "10-K/A", "10-Q", "10-Q/A"]
+  use_bulk: false
+  request_sleep_seconds: 0.15
+
+run:
+  sample_size: null
+  min_year: 2018

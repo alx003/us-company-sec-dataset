@@ -1,0 +1,10 @@
+.python_deps/
+__pycache__/
+*.pyc
+.DS_Store
+cache/
+outputs/*.duckdb
+outputs/*.xlsx
+outputs/parquet/
+scripts/__pycache__/
+src/**/__pycache__/

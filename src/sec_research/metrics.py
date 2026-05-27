@@ -1,0 +1,27 @@
+from __future__ import annotations
+
+METRIC_MAP = [
+    ("revenue", "us-gaap", "RevenueFromContractWithCustomerExcludingAssessedTax", "USD", 1),
+    ("revenue", "us-gaap", "Revenues", "USD", 2),
+    ("gross_profit", "us-gaap", "GrossProfit", "USD", 1),
+    ("operating_income", "us-gaap", "OperatingIncomeLoss", "USD", 1),
+    ("net_income", "us-gaap", "NetIncomeLoss", "USD", 1),
+    ("eps", "us-gaap", "EarningsPerShareDiluted", "USD/shares", 1),
+    ("eps", "us-gaap", "EarningsPerShareBasic", "USD/shares", 2),
+    ("cash", "us-gaap", "CashAndCashEquivalentsAtCarryingValue", "USD", 1),
+    ("cash", "us-gaap", "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents", "USD", 2),
+    ("debt", "us-gaap", "DebtCurrent", "USD", 2),
+    ("debt", "us-gaap", "LongTermDebtCurrent", "USD", 3),
+    ("debt", "us-gaap", "LongTermDebtNoncurrent", "USD", 4),
+    ("operating_cash_flow", "us-gaap", "NetCashProvidedByUsedInOperatingActivities", "USD", 1),
+    ("capex", "us-gaap", "PaymentsToAcquirePropertyPlantAndEquipment", "USD", 1),
+    ("free_cash_flow", "derived", "operating_cash_flow_minus_capex", "USD", 1),
+    ("shares_outstanding", "dei", "EntityCommonStockSharesOutstanding", "shares", 1),
+    ("rd", "us-gaap", "ResearchAndDevelopmentExpense", "USD", 1),
+    ("sga", "us-gaap", "SellingGeneralAndAdministrativeExpense", "USD", 1),
+    ("inventory", "us-gaap", "InventoryNet", "USD", 1),
+    ("assets", "us-gaap", "Assets", "USD", 1),
+    ("liabilities", "us-gaap", "Liabilities", "USD", 1),
+    ("equity", "us-gaap", "StockholdersEquity", "USD", 1),
+    ("equity", "us-gaap", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest", "USD", 2),
+]

@@ -1,0 +1,341 @@
+ticker,cik,name,country,sector,industry,source_note
+AAL,,American,,Industrials,Passenger Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 372
+AAPL,,Apple,,Information Tech.,"Technology Hardware, Storage & Peripherals",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 274
+ABBV,,AbbVie Inc.,,Health Care,HC Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 344
+ABEV3,,AMBEV S/A,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 384
+ABNB,,AirBnB Class A,,Cons. Discretionary,"Hotel, Restaurants & Leisure",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 324
+ABT,,Abbott Laboratories,,Health Care,HC Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 346
+AC,,Arca Continental,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 409
+ACM,,Aecom,,Industrials,Construction & Engineering,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 364
+ACN,,Accenture,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 281
+ADBE,,Adobe,,Information Tech.,Software,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 278
+ADM,,Archer Daniels Midland,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 340
+AEP,,American Electric Power,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 358
+AGHOL,,Anadolu Grubu Holding,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 461
+AIR.SE,,Airbus,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 359
+ALCC,,Alcon Inc.,,Health care,Health Care Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 454
+ALEP,,ALLEGRO.eu SA,,Cons. Discretionary,Broadline Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 431
+ALI,,Ayala Land,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 608
+ALVG,,Allianz SE,,Financials,Multi-line Insurance,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 417
+AMD,,Advanced Micro Devices,,Information Tech.,Semiconductors & Eqpt,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 280
+AMGN,,Amgen,,Health Care,Biotechnology,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 350
+AMRT,,Sumber Alfaria,,Cons. Staples,Food & Staples Retailing,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 567
+AMT,,American Tower Corp.,,Real Estate,Specialized REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 245
+AMXB,,America Movil,,Comm Services,Diversified Telecommunication Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 400
+AMZN,,Amazon,,Cons. Discretionary,Broadline Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 317
+ANZ,,ANZ Group Holdings Ltd.,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 482
+APD,,Air Products & Chemicals,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 293
+ARCLK,,Arcelik,,Cons. Discretionary,Household Durables,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 462
+ASII,,Astra International,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 562
+ASURB,,Grupo Aeroportuario del Sureste,,Industrials,Transportation Infrastructure,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 408
+AUD.100KG,,Wool,,Cons. Discretionary,"Textiles, Apparel & Luxury",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 186
+AVGO,,Broadcom,,Information Tech.,Semiconductors & Eqpt,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 276
+AZN,,AstraZeneca,,Health care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 466
+BA,,Boeing,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 304
+BAC,,Bank of America,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 263
+BAES,,BAE Systems,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 472
+BANPU,,Banpu,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 669
+BASFN,,BASF SE,,Materials,Diversified Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 422
+BATS,,British American Tobacco,,Cons. Staples,Tobacco,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 471
+BAYGN,,Bayer AG,,Health care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 420
+BBAS3,,Banco do Brasil,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 388
+BBCA,,Bank Central Asia,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 558
+BBDC3,,Banco Bradesco,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 385
+BBL,,Bangkok Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 671
+BBNI,,Bank Negara,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 561
+BBRI,,Bank Rakyat Indo,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 559
+BDO,,"BDO Unibank, Inc.",,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 610
+BHP,,BHP Group,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 484
+BIMBOA,,Grupo Bimbo,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 406
+BKNG,,Booking Holdings Inc.,,Cons. Discretionary,"Hotel, Restaurants & Leisure",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 323
+BKR,,Baker Hughes,,Energy,Energy Equipment & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 259
+BLK,,BlackRock Inc.,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 270
+BMO,,Bank of Montreal,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 392
+BMRI,,Bank Mandiri,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 560
+BNS,,Bank of Nova Scotia,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 393
+BPI,,Bank of the Philippine Islands,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 611
+BRK.B,,Berkshire Hathaway,,Financials,Financial Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 261
+BRKM3,,Braskem PNA,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 389
+BRL.15KG,,Beef,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 213
+BRL.KG,,Poultry,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 214
+BVH,,BaoViet Holdings,,Financials,Insurance,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 687
+BX,,Blackstone,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 269
+BYAN,,Bayan Resources,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 563
+C,,Citigroup,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 265
+CAD.T,,Canola,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 184
+CAT,,Caterpillar,,Industrials,Machinery,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 302
+CBA,,Commonwealth Bank Australia,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 480
+CBKG,,Commerzbank AG,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 424
+CCI,,Crown Castle Int’l Corp.,,Real Estate,Specialized REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 247
+CDR,,CD Projekt SA,,Comm Services,Entertainment,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 433
+CELC,,CelcomDigi Bhd,,Comm Services,Wireless,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 600
+CEMEXCPO,,Cemex,,Materials,Construction Materials,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 401
+CFR,,Richemont SA,,Cons. Discretionary,"Textiles, Apparel & Luxury",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 448
+CHMF,,Severstal,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 435
+CHTR,,Charter Communications A,,Comm Services,Media,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 238
+CIMB,,CIMB Holding,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 596
+CL,,Colgate-Palmolive Co.,,Cons. Staples,Household Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 329
+CMCSA,,Comcast Corp A.,,Comm Services,Media,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 237
+CME,,CME Group,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 271
+CNQ,,Canadian Natural Resources,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 395
+CNR,,Canadian National Railway,,Industrials,Ground Transportation,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 394
+CNY.KG,,Titanium,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 170
+CNY.T,,Lithium,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 164
+CNY.TON,,Steel,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 163
+COP,,ConocoPhillips,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 255
+COST,,Costco Wholesale,,Cons. Staples,Cons. Staples Distr. & Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 330
+CPALL,,CP Public Co.,,Cons. Staples,Food & Staples Retailing,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 660
+CPF,,Charoen Pokphand Foods,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 662
+CRC,,Central Retail,,Cons. Discretionary,Broadline Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 670
+CRM,,"Salesforce, Inc.",,Information Tech.,Software,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 279
+CSCO,,Cisco Systems,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 282
+CSX,,CSX Corporation,,Industrials,Ground Transportation,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 301
+CTDM,,City Developments Ltd.,,Real Estate,Real Estate Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 629
+CTG,,Vietjnam Joint Stock Comm. Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 675
+CVE,,Cenovus Energy,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 398
+CVX,,Chevron,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 254
+D,,Dominion Energy,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 355
+DAL,,Delta,,Industrials,Passenger Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 373
+DBKGN,,Deutsche Bank AG,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 423
+DBSM,,DBS Holdings,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 616
+DD,,DuPont de Nemours Inc.,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 285
+DE,,Deere & Co.,,Industrials,Machinery,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 303
+DFIR,,Dfi Retail Group Hlds,,Cons. Staples,Food & Staples Retailing,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 630
+DGE,,Diageo plc,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 469
+DHR,,Danaher Corp..,,Health Care,HC Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 351
+DIS,,Walt Disney Co.,,Comm Services,Media,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 241
+DNP,,Dino Polska SA,,Cons. Staples,Cons. Staples Distr. & Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 429
+DOW,,Dow Inc.,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 286
+DTEGN,,Deutsche Telekom AG,,Comm Services,Telecom Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 418
+DUK,,Duke Energy,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 354
+EA,,Electronic Arts,,Comm Services,Entertainment,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 239
+ECL,,Ecolab,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 290
+ENB,,Enbridge,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 396
+EOG,,EOG Resources,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 256
+EQIX,,"Equinix, Inc.",,Real Estate,Specialized REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 249
+EREGL,,Eregli Demir Celik,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 463
+ETN,,Eaton Corp.,,Industrials,Electrical Equipment,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 314
+EUR.100KG,,Potatoes,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 195
+EUR.MWH,,TTF Gas,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 150
+EUR.T,,Rapeseed,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 193
+FCX,,Freeport-McMoRan Inc.,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 294
+FDX,,Federal Express,,Industrials,Air Freight & Logistics,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 299
+FEMSAUBD,,Fomento Economico Mexicano SAB,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 403
+FLR,,Fluor Corporation,,Industrials,Construction & Engineering,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 361
+FPT,,FPT Corp.,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 697
+GAPB,,Grupo Aeroportuario del Pacifico,,Industrials,Transportation Infrastructure,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 407
+GAS,,Petrovietnam Gas JSC,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 691
+GAZP,,Gazprom,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 439
+GBP.THM,,UK Gas,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 151
+GD,,General Dynamics,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 311
+GE,,General Electric,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 305
+GEX,,Gelex,,Industrials,Electrical Equipment,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 695
+GFINBURO,,Grupo Financiero Banorte O,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 402
+GGBR3,,Gerdau,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 386
+GLEN,,Glencore Xtrata PLC,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 360
+GMEXICOB,,Grupo Mexico SAB de CV B,,Materials,Metal & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 405
+GMKN,,Norilskiy Nikel,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 438
+GOOG,,Alphabet C,,Comm Services,Interactive Media & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 234
+GOOGL,,Alphabet A,,Comm Services,Interactive Media & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 233
+GSK,,GlaxoSmithKline,,Health care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 470
+GVR,,Vietnam Rubber,,Materials,Paper & Forest Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 694
+HAL,,Halliburton,,Energy,Energy Equipment & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 258
+HD,,Home Depot,,Cons. Discretionary,Specialty Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 319
+HDB,,HCMC Development JS Comm. Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 682
+HDBK,,HDFC Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 546
+HLBB,,Hong Leong Bank BHD,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 597
+HON,,Honeywell,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 306
+HPG,,Hoa Phat Group,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 693
+HPHT,,Hutchison Port,,Industrials,Transportation Infrastructure,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 631
+HVN,,Golden MV Holdings,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 612
+ICBK,,ICICI Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 547
+ICBP,,Indofood Cbp,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 566
+ICE,,Intercontinental Exchange,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 272
+ICT,,International Container Terminals,,Industrials,Transportation Infrastructure,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 614
+IFXGN,,Infineon Technologies AG,,Information Tech.,Semiconductors & Eqpt,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 421
+INFY,,Infosys,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 554
+INR.KG,,Tea,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 189
+INTC,,Intel Corp.,,Information Tech.,Semiconductors & Eqpt,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 283
+ISMEN,,IS Y. Men. Deg,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 460
+ITUB3,,Itau Unibanco,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 383
+IVL,,Indorama Ventures,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 664
+J,,Jacobs Engineering,,Industrials,Construction & Engineering,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 362
+JARD,,Jardine Matheson,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 622
+JCYC,,Jardine Cycle & Carriage,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 623
+JNJ,,Johnson & Johnson,,Health Care,HC Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 343
+JPM,,JPMorgan Chase & Comopany,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 262
+KBANK,,Kasikornbank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 668
+KCHOL,,KOC Holding,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 455
+KGH,,KGHM Polska Miedz SA,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 430
+KLCC,,KLCC Property,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 599
+KLKK,,Kuala Lumpur Kepong,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 598
+KO,,Coca-Cola,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 333
+KPLM,,Keppel Corporation,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 624
+KRU,,Kruk SA,,Financials,Diversified Financials Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 434
+LIN,,Linde plc,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 292
+LKOH,,Lukoil,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 440
+LLOY,,Lloyds Banking Group,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 474
+LLY,,Eli Lilly & Co.,,Health Care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 347
+LMT,,Lockheed Martin,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 309
+LONN,,Lonza Group AG,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 452
+LOW,,Lowe’s Cos.,,Cons. Discretionary,Specialty Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 320
+LPPP,,LPP SA,,Cons. Discretionary,Specialty Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 432
+MA,,Mastercard,,Financials,Financial Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 267
+MACT,,Mapletree Industrial Trust,,Real Estate,Industrial REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 627
+MAHM,,Mahindra & Mahindra,,Cons. Discretionary,Automobiles,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 550
+MAPI,,Mapletree Logistics Trust,,Real Estate,Industrial REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 628
+MBB,,Military Commercial Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 677
+MBBM,,Malayan Banking BHD,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 593
+MBGN,,Mercedes-Benz Group AG,,Cons. Discretionary,Automobiles,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 419
+MCD,,McDonalds,,Cons. Discretionary,"Hotel, Restaurants & Leisure",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 321
+MDLZ,,Mondelez International,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 339
+MER,,Manila Electric Company,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 615
+META,,Meta,,Comm Services,Interactive Media & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 235
+MG,,Magna International,,Cons. Discretionary,Automotive Components,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 399
+MLM,,Martin Marietta Materials,,Materials,Construction Materials,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 288
+MMM,,3M Company,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 312
+MNST,,Monster Beverage Corp.,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 335
+MO,,Altria Group Inc.,,Cons. Staples,Tobacco,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 338
+MQG,,Macquarie Group,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 487
+MRK,,Merck & Co.,,Health Care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 349
+MSFT,,Microsoft,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 275
+MSN,,Masan Group Corp,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 700
+MWG,,Mobile World Inv. Corp.,,Cons. Discretionary,Specialty Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 698
+MYR.TON,,Palm Oil,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 176
+NAB,,National Australia Bank Ltd.,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 481
+NEE,,NextEra Energy,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 353
+NEM,,Newmont Corp.,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 295
+NESN,,Nestle SA,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 445
+NFLX,,Netflix,,Comm Services,Interactive Media & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 236
+NKE,,Nike,,Cons. Discretionary,"Textiles, Apparel & Luxury",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 322
+NOC,,Northrop Grumman Corp.,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 310
+NOK,,Salmon,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 217
+NOVN,,Novartis Int’l AG,,Health care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 447
+NUE,,Nucor,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 296
+NVDA,,Nvidia,,Information Tech.,Semiconductors & Eqpt,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 277
+OCBC,,Oversea-Chinese,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 617
+OR,,PTT Oil & Retail,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 661
+PCGB,,Petronas Chemicals,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 604
+PEO,,Bank Pekao,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 428
+PEP,,Pepsi,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 334
+PETR4,,Petrobras Brasileiro,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 380
+PFE,,Pfizer,,Health Care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 348
+PG,,Procter & Gamble,,Cons. Staples,Household Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 328
+PGAS,,Petronas Gas Berhad,,Utilities,Gas Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 603
+PKN,,Orlen SA,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 425
+PKO,,Bank Polski,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 426
+PLD,,"Prologis, Inc.",,Real Estate,Industrial REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 248
+PLX,,Vietnam National Petroleum,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 692
+PLZL,,Polyus PAO,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 437
+PM,,Philip Morris Int’l,,Cons. Staples,Tobacco,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 337
+PMET,,Press Metal Aluminum Hldgs Bhd,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 602
+POW,,Petrovietnam Power,,Utilities,Independent Power and Renewable Electricity Producers,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 703
+PPG,,PPG Industries,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 287
+PSA,,Public Storage,,Real Estate,Specialized REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 251
+PTT,,PTT (SOE),,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 659
+PTTEP,,PTT Exploration & Production,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 667
+PTTGC,,PTT Global Chemical,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 663
+PUBM,,Public Bank BHD,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 594
+RELI,,Reliance Industries,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 549
+RIO,,Rio Tinto,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 485
+RO,,Roche Holding AG,,Health care,Pharmaceuticals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 446
+ROSN,,Rosneft,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 442
+RTX,,RTX Corporation,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 308
+RY,,Royal Bank of Canada,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 390
+SAB,,Saigon Beer Alcohol Beverage,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 702
+SAHOL,,Sabanci Holding,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 458
+SAPG,,SAP SE,,Information Tech.,Software,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 415
+SBER,,SBERBank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 444
+SBI,,State Bank of India,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 548
+SBUX,,Starbucks Corp.,,Cons. Discretionary,"Hotel, Restaurants & Leisure",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 325
+SCB,,SCB X,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 672
+SCC,,Siam Cement,,Materials,Construction Materials,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 665
+SCHW,,Charles Schwab,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 268
+SCIL,,Sembcorp Industries,,Utilities,Independent Power Producers & Energy Traders,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 626
+SHB,,Sai Gon Ha Noi Commercial JS Bank (SHB),,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 685
+SHELI,,Shell,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 465
+SHW,,Sherwin-Williams,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 291
+SIAL,,Singapore Airlines,,Industrials,Passenger Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 621
+SIEGN,,Siemens AG,,Industrials,Industrial Conglomerates,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 416
+SIKA,,Sika AG,,Materials,Chemicals,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 453
+SJS,,Song Da Urban & Ind. Zone,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 690
+SLB,,Schlumberger NV,,Energy,Energy Equipment & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 257
+SM,,SM Investments Corp.,,Financials,Diversified Financial Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 606
+SMC,,San Miguel Corporation,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 613
+SMPH,,SM Prime Holdings,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 607
+SNGS,,Surgutneftegaz PAO,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 443
+SO,,Southern Company,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 356
+SPG,,Simon Property Group.,,Real Estate,Retail REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 246
+SRE,,Sempra,,Utilities,Electric Utilities,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 357
+SSB,,Southeast Asia Comm. JS Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 680
+SSI,,SSI Securities,,Financials,Capital Markets,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 686
+STB,,Sai Gon Thuong Tin Comm. JS Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 681
+STEG,,ST Engineering,,Industrials,Aerospace & Defense,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 625
+STEL,,Singapore Telecom,,Comm Services,Diversified Telecommunication Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 619
+STZ,,Constellation Brands,,Cons. Staples,Beverages,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 336
+SU,,Suncor Energy,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 397
+SUZB3,,Suzano Papel Celulose,,Materials,Paper & Forest Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 387
+TAMO,,Tata Motors,,Cons. Discretionary,Automobiles,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 551
+TATN,,Tatneft PAO,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 436
+TCB,,Techcombank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 676
+TCELL,,Turkcell,,Comm Services,Wireless,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 464
+TCS,,TCS (Tata),,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 553
+TD,,Toronto-Dominion Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 391
+TENA,,Tenaga Nasional BHD,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 595
+TEX,,Terex,,Industrials,Machinery,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 369
+TGT,,Target,,Cons. Staples,Cons. Staples Distr. & Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 331
+THYAO,,Turk Hava Yollari,,Industrials,Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 457
+TISC,,Tata Steel,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 552
+TITN,,Titan Company,,Cons. Discretionary,"Textiles, Apparel & Luxury Goods",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 557
+TJX,,TJX Cos. Inc.,,Cons. Discretionary,Specialty Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 326
+TLKM,,Telekom Indonesia,,Comm Services,Diversified Telecom Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 565
+TLMM,,Telekom Malaysia Bhd,,Comm Services,Diversified Telecommunication Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 601
+TMO,,Thermo Fisher Scientific,,Health Care,HC Equipment & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 345
+TMUS,,T-Mobile,,Comm Services,Wireless,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 240
+TOP,,Thai Oil Public Co. Ltd.,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 666
+TPB,,Tien Phong Commercial,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 684
+TSLA,,"Tesla, Inc.",,Cons. Discretionary,Automobiles,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 318
+TUPRS,,Tupras,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 456
+UAL,,United,,Industrials,Passenger Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 371
+UBER,,Uber Technologies,,Industrials,Ground Transportation,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 307
+UNH,,UnitedHealth Group,,Health Care,HC Providers & Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 342
+UNP,,Union Pacific Corp.,,Industrials,Ground Transportation,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 300
+UNTR,,United Tractors,,Industrials,Machinery,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 564
+UOBH,,United Overseas Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 618
+UPS,,United Parcel Service Inc. B,,Industrials,Air Freight & Logistics,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 298
+URI,,United Rentals,,Industrials,Trading Co. & Distributors,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 368
+USD.BBL,,Crude Oil,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 144
+USD.CWT,,Milk,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 178
+USD.GAL,,Gasoline,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 147
+USD.KG,,Titanium,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 169
+USD.LBS,,Uranium,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 155
+USD.MMBTU,,Natural gas,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 146
+USD.T,,Naphtha,,Energy,--,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 153
+USD.TON,,HRC Steel,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 167
+V,,Visa,,Financials,Financial Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 266
+VAKBN,,Vakiflar Bankasi,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 459
+VALE3,,Vale SA ADR,,Materials,Metals & Mining,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 382
+VCB,,Vietcombank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 673
+VHM,,Vinhomes,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 688
+VIB,,Viet Nam Int’l Comm. JS Bank,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 683
+VIC,,Vingroup JSC,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 689
+VJC,,Vietjet Aviation,,Industrials,Passenger Airlines,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 696
+VMC,,Vulcan Materials,,Materials,Construction Materials,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 289
+VNM,,Vinamilk,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 701
+VPB,,Vietnam Prosperity,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 678
+VRE,,Vincom Retail,,Real Estate,Real Estate Management & Development,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 699
+VZ,,Verizon,,Comm Services,Wireless,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 242
+WALMEX,,Walmart de Mexico SAB de CV B,,Cons. Staples,Cons. Staples Distr. & Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 404
+WBC,,Westpac Banking,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 483
+WDS,,Woodside Energy Group Ltd.,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 486
+WELL,,Welltower Inc.,,Real Estate,Health Care REITs,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 250
+WES,,Wesfarmers Ltd,,Cons. Discretionary,Broadline Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 488
+WFC,,Wells Fargo & Company,,Financials,Banks,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 264
+WIPR,,Wipro,,Information Tech.,IT Services,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 555
+WLIL,,Wilmar International,,Cons. Staples,Food Products,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 620
+WM,,Waste Management,,Industrials,Commercial Services & Supplies,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 313
+WMT,,Walmart,,Cons. Staples,Cons. Staples Distr. & Retail,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 332
+WOR,,Worley Ltd,,Industrials,Construction & Engineering,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 365
+WOW,,Woolworths Group Ltd,,Cons. Staples,Food & Staples Retailing,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 489
+XOM,,Exxon Mobil,,Energy,"Oil, Gas & Consumable Fuels",1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 253
+ZURN,,Zurich Insurance Gp AG,,Financials,Insurance,1.  WB - MASTER - 2026.05.23.xlsx:COLLECT:row 449
