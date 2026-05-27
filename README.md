@@ -2,7 +2,7 @@
 
 This repo collects free U.S. public-company data from the SEC.
 
-In simple words: it pulls company filing data from 10-K and 10-Q reports, organizes it into CSV files, and keeps source links so the numbers can be checked later.
+It pulls company filing data from 10-K and 10-Q reports, organizes it into CSV files, and keeps source links so the numbers can be checked later.
 
 ## What Data This Gets
 
@@ -15,7 +15,7 @@ It gets:
 - Raw XBRL facts: detailed reported SEC facts exactly as structured in filings.
 - Clean research metrics: selected useful metrics pulled from the raw facts.
 
-The clean metrics include things like:
+The clean metrics includs: 
 
 - revenue
 - gross profit
@@ -39,21 +39,15 @@ This does **not** yet collect RSS feeds, company news, emails, Europe, ASEAN, or
 
 ## Which Files To Use
 
-The easiest files are in the `dataset/` folder.
-
-Start with:
-
 - `dataset/companies.csv`: list of companies and whether they matched to the SEC.
 - `dataset/curated_metrics.csv`: the most useful research-ready financial metrics.
 - `dataset/filings.csv`: filing history and SEC links.
 
-Use only when you need more detail:
+for more detail:
 
 - `dataset/raw_facts.csv`: all raw SEC/XBRL facts collected from filings.
 - `dataset/metric_map.csv`: shows which XBRL tags feed each clean metric.
 - `dataset/manifest.json`: row counts and generation info.
-
-The `outputs/` folder only contains small validation files in GitHub. Big generated files like DuckDB and Excel are intentionally not stored in GitHub.
 
 ## How To Use The Data
 
@@ -66,21 +60,9 @@ Typical workflow:
 3. Compare `fiscal_year` and `fiscal_period`.
 4. Use `source_url` if you need to check the original SEC filing.
 
-Example question this dataset can answer:
-
-> What was Apple revenue by fiscal year and quarter?
-
-Use:
-
-- `ticker = AAPL`
-- `metric = revenue`
-- sort by `fiscal_year`, `fiscal_period`, and `period_end`
-
 For audit/source checking, use `dataset/raw_facts.csv` and `dataset/filings.csv`.
 
-## Does It Update Automatically?
-
-Yes, this repo has a GitHub Actions workflow:
+## Auto Updates
 
 `/.github/workflows/update-sec-dataset.yml`
 
@@ -88,16 +70,7 @@ It is set to run weekly:
 
 - every Monday at 14:00 UTC
 
-You do **not** have to click the GitHub Actions button every time.
-
-The button is only for manual refreshes when you want to update immediately.
-
-In GitHub:
-
-1. Go to the repo.
-2. Click **Actions**.
-3. Click **Update SEC Dataset**.
-4. Click **Run workflow** only if you want a refresh right now.
+GitHub Actions for manual refreshes when you want to update immediately.
 
 Important: before relying on the automatic weekly run, update the SEC user-agent email in:
 
