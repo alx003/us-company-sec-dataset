@@ -79,10 +79,10 @@ Important: before relying on the automatic weekly run, update the SEC user-agent
 Replace:
 
 ```yaml
-user_agent: "alx003 SEC research dataset contact@example.com"
+user_agent: alx003@ucsd.edu"
 ```
 
-with a real contact email. The SEC expects automated requests to identify who is making them.
+with a contact email. 
 
 ## How To Refresh Locally
 
