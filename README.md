@@ -1,71 +1,144 @@
-# U.S.-First Company Data Collection System
+# U.S. Company SEC Dataset
 
-This project builds a local U.S. company research database from the existing BrianProject workbooks and free SEC EDGAR/XBRL data.
+This repo collects free U.S. public-company data from the SEC.
 
-## What It Produces
+In simple words: it pulls company filing data from 10-K and 10-Q reports, organizes it into CSV files, and keeps source links so the numbers can be checked later.
 
-- `outputs/us_company_research.duckdb`: durable research database.
-- `outputs/parquet/`: Parquet exports of core tables.
-- `outputs/us_company_research_export.xlsx`: analyst-facing Excel views.
-- `outputs/workbook_field_inventory.csv`: workbook/sheet/header inventory.
-- `outputs/workbook_validation.csv`: hand-collected field classification.
+## What Data This Gets
 
-## Quick Start
+The dataset is built from SEC EDGAR / XBRL data. It focuses on U.S. public companies.
 
-The dependencies for this workspace were installed into `.python_deps`. To run with the bundled Python:
+It gets:
 
-```bash
-PYTHONPATH=/Users/allisonxu/Desktop/Project/.python_deps \
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
-scripts/run_pipeline.py --config config/pipeline.yml --sample-size 5
+- Company list: ticker, CIK, company name, sector, industry, and whether the company was matched to the SEC.
+- Filing history: 10-K and 10-Q filing dates, report dates, fiscal year/quarter, accession numbers, and SEC source links.
+- Raw XBRL facts: detailed reported SEC facts exactly as structured in filings.
+- Clean research metrics: selected useful metrics pulled from the raw facts.
+
+The clean metrics include things like:
+
+- revenue
+- gross profit
+- operating income
+- net income
+- EPS
+- cash
+- debt
+- operating cash flow
+- capex
+- free cash flow
+- shares outstanding
+- R&D
+- SG&A
+- inventory
+- assets
+- liabilities
+- equity
+
+This does **not** yet collect RSS feeds, company news, emails, Europe, ASEAN, or LLM summaries. Those should come after the source pipes are designed.
+
+## Which Files To Use
+
+The easiest files are in the `dataset/` folder.
+
+Start with:
+
+- `dataset/companies.csv`: list of companies and whether they matched to the SEC.
+- `dataset/curated_metrics.csv`: the most useful research-ready financial metrics.
+- `dataset/filings.csv`: filing history and SEC links.
+
+Use only when you need more detail:
+
+- `dataset/raw_facts.csv`: all raw SEC/XBRL facts collected from filings.
+- `dataset/metric_map.csv`: shows which XBRL tags feed each clean metric.
+- `dataset/manifest.json`: row counts and generation info.
+
+The `outputs/` folder only contains small validation files in GitHub. Big generated files like DuckDB and Excel are intentionally not stored in GitHub.
+
+## How To Use The Data
+
+For normal research, open `dataset/curated_metrics.csv`.
+
+Typical workflow:
+
+1. Filter by `ticker`, such as `AAPL`.
+2. Filter by `metric`, such as `revenue` or `net_income`.
+3. Compare `fiscal_year` and `fiscal_period`.
+4. Use `source_url` if you need to check the original SEC filing.
+
+Example question this dataset can answer:
+
+> What was Apple revenue by fiscal year and quarter?
+
+Use:
+
+- `ticker = AAPL`
+- `metric = revenue`
+- sort by `fiscal_year`, `fiscal_period`, and `period_end`
+
+For audit/source checking, use `dataset/raw_facts.csv` and `dataset/filings.csv`.
+
+## Does It Update Automatically?
+
+Yes, this repo has a GitHub Actions workflow:
+
+`/.github/workflows/update-sec-dataset.yml`
+
+It is set to run weekly:
+
+- every Monday at 14:00 UTC
+
+You do **not** have to click the GitHub Actions button every time.
+
+The button is only for manual refreshes when you want to update immediately.
+
+In GitHub:
+
+1. Go to the repo.
+2. Click **Actions**.
+3. Click **Update SEC Dataset**.
+4. Click **Run workflow** only if you want a refresh right now.
+
+Important: before relying on the automatic weekly run, update the SEC user-agent email in:
+
+`config/repo_pipeline.yml`
+
+Replace:
+
+```yaml
+user_agent: "alx003 SEC research dataset contact@example.com"
 ```
 
-For a full run, omit `--sample-size 5`.
+with a real contact email. The SEC expects automated requests to identify who is making them.
 
-## GitHub Dataset Workflow
+## How To Refresh Locally
 
-This repo includes a weekly GitHub Actions workflow at `.github/workflows/update-sec-dataset.yml`.
-
-The workflow:
-
-1. Installs Python dependencies.
-2. Runs the SEC collection pipeline using `config/repo_pipeline.yml`.
-3. Exports git-friendly CSV files into `dataset/`.
-4. Commits refreshed dataset files back to the repo.
-
-Before enabling it in GitHub:
-
-- Create a dedicated repo under `https://github.com/alx003`, for example `us-company-sec-dataset`.
-- Push this project folder to that repo.
-- Update `sec.user_agent` in `config/repo_pipeline.yml` with a real contact email.
-- Keep large generated binary files out of git; the workflow commits CSV dataset files and the manifest, not the DuckDB or Excel output.
-
-Useful local commands:
+If you want to run it from this computer:
 
 ```bash
-# Refresh the company seed list from the local BrianProject workbooks
-PYTHONPATH=/Users/allisonxu/Desktop/Project/src:/Users/allisonxu/Desktop/Project/.python_deps \
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
-scripts/extract_workbook_companies.py
+cd /Users/allisonxu/Desktop/Project
 
-# Export current DuckDB tables to dataset/*.csv
+PYTHONPATH=/Users/allisonxu/Desktop/Project/.python_deps \
+/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+scripts/run_pipeline.py --config config/repo_pipeline.yml
+
 PYTHONPATH=/Users/allisonxu/Desktop/Project/.python_deps \
 /Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
 scripts/export_git_dataset.py --database outputs/us_company_research.duckdb --output-dir dataset
 ```
 
-## Important Notes
+Then commit and push:
 
-- V1 is U.S.-only and focuses on 10-K / 10-Q filing history plus standardized XBRL facts.
-- The pipeline stores all SEC facts it can ingest for selected companies, then creates a curated metric layer for research use.
-- If the workbooks do not contain enough U.S. company identifiers, add rows to `data/seeds/manual_companies.csv`.
-- SEC requests require a descriptive User-Agent. Update `sec.user_agent` in `config/pipeline.yml` before production use.
+```bash
+git add dataset outputs/workbook_field_inventory.csv outputs/workbook_validation.csv
+git commit -m "Refresh SEC dataset"
+git push
+```
 
-## Core Tables
+## Current Limits
 
-- `companies`: workbook/manual seed companies resolved to SEC CIKs.
-- `filings`: 10-K / 10-Q filing metadata.
-- `raw_facts`: normalized long-form SEC XBRL facts.
-- `metric_map`: preferred XBRL tags for curated metrics.
-- `curated_metrics`: source-traced research metrics.
-- `collection_runs`: run metadata and status.
+- U.S. companies only.
+- SEC 10-K and 10-Q data only.
+- Some workbook companies are non-U.S. or do not map cleanly to SEC tickers.
+- Raw SEC facts can be noisy; use `curated_metrics.csv` first.
+- RSS feeds and company news flow are not implemented yet.

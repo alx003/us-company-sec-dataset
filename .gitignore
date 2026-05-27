@@ -4,6 +4,7 @@ __pycache__/
 .DS_Store
 cache/
 outputs/*.duckdb
+outputs/*.duckdb.wal
 outputs/*.xlsx
 outputs/parquet/
 scripts/__pycache__/
