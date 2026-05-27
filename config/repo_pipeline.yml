@@ -17,7 +17,7 @@ cache:
   companyfacts_bulk_url: "https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip"
 
 sec:
-  user_agent: "alx003@ucsd.edu"
+  user_agent: alx003@ucsd.edu
   forms: ["10-K", "10-K/A", "10-Q", "10-Q/A"]
   use_bulk: false
   request_sleep_seconds: 0.15
