@@ -1,117 +1,139 @@
-# U.S. Company SEC Dataset
+# Company SEC/XBRL Workbook Automation
 
-This repo collects free U.S. public-company data from the SEC.
+This repo creates one Excel workbook per company from SEC XBRL data. The current workbook is for FedEx, ticker `FDX`.
 
-It pulls company filing data from 10-K and 10-Q reports, organizes it into CSV files, and keeps source links so the numbers can be checked later.
+The working output location for this project is:
 
-## What Data This Gets
-
-The dataset is built from SEC EDGAR / XBRL data. It focuses on U.S. public companies.
-
-It gets:
-
-- Company list: ticker, CIK, company name, sector, industry, and whether the company was matched to the SEC.
-- Filing history: 10-K and 10-Q filing dates, report dates, fiscal year/quarter, accession numbers, and SEC source links.
-- Raw XBRL facts: detailed reported SEC facts exactly as structured in filings.
-- Clean research metrics: selected useful metrics pulled from the raw facts.
-
-The clean metrics includs: 
-
-- revenue
-- gross profit
-- operating income
-- net income
-- EPS
-- cash
-- debt
-- operating cash flow
-- capex
-- free cash flow
-- shares outstanding
-- R&D
-- SG&A
-- inventory
-- assets
-- liabilities
-- equity
-
-This does **not** yet collect RSS feeds, company news, emails, Europe, ASEAN, or LLM summaries. Those should come after the source pipes are designed.
-
-## Which Files To Use
-
-- `dataset/companies.csv`: list of companies and whether they matched to the SEC.
-- `dataset/curated_metrics.csv`: the most useful research-ready financial metrics.
-- `dataset/filings.csv`: filing history and SEC links.
-
-for more detail:
-
-- `dataset/raw_facts.csv`: all raw SEC/XBRL facts collected from filings.
-- `dataset/metric_map.csv`: shows which XBRL tags feed each clean metric.
-- `dataset/manifest.json`: row counts and generation info.
-
-## How To Use The Data
-
-For normal research, open `dataset/curated_metrics.csv`.
-
-Typical workflow:
-
-1. Filter by `ticker`, such as `AAPL`.
-2. Filter by `metric`, such as `revenue` or `net_income`.
-3. Compare `fiscal_year` and `fiscal_period`.
-4. Use `source_url` if you need to check the original SEC filing.
-
-For audit/source checking, use `dataset/raw_facts.csv` and `dataset/filings.csv`.
-
-## Auto Updates
-
-`/.github/workflows/update-sec-dataset.yml`
-
-It is set to run weekly:
-
-- every Monday at 14:00 UTC
-
-GitHub Actions for manual refreshes when you want to update immediately.
-
-Important: before relying on the automatic weekly run, update the SEC user-agent email in:
-
-`config/repo_pipeline.yml`
-
-Replace:
-
-```yaml
-user_agent: alx003@ucsd.edu"
+```text
+/Users/allisonxu/OneDrive/文件/Brian
 ```
 
-with a contact email. 
+Generated workbook:
 
-## How To Refresh Locally
+```text
+/Users/allisonxu/OneDrive/文件/Brian/FDX_fedex_sec_collection.xlsx
+```
 
-If you want to run it from this computer:
+## Workbook Structure
+
+Each company gets one Excel workbook.
+
+The FedEx workbook has these tabs:
+
+- `Collection`: automated SEC/XBRL data.
+- `Research`: manual analyst notes.
+- `Company Info`: company-level fields that are the same for every row, including ticker, company name, CIK, SEC company page, and row counts.
+- `Blank`: empty placeholder tab.
+
+The `Collection` tab is designed to be readable first, auditable second. The first columns show:
+
+- `Data Group`
+- `Statement / Detail Area`
+- `Metric Group`
+- `Metric Name`
+- `XBRL Label`
+- `Value`
+- `Unit`
+
+This makes it easier to filter for items such as depreciation, assets, capex, revenue, profit, debt, liabilities, and equity without scanning raw XBRL concept names first.
+
+## What The Automation Pulls
+
+The script [scripts/build_fdx_workbook.mjs](scripts/build_fdx_workbook.mjs) automatically pulls FedEx data from the SEC.
+
+It uses three SEC sources:
+
+1. SEC company ticker file
+   - URL: `https://www.sec.gov/files/company_tickers_exchange.json`
+   - Purpose: finds FedEx's CIK from ticker `FDX`.
+2. SEC submissions API
+   - URL pattern: `https://data.sec.gov/submissions/CIK##########.json`
+   - Purpose: gets recent 10-K and 10-Q filing metadata, accession numbers, fiscal periods, filing dates, and primary filing document names.
+3. SEC companyfacts XBRL API
+   - URL pattern: `https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json`
+   - Purpose: gets standardized company XBRL line items for income statement, balance sheet, cash flow statement, and other tagged facts.
+
+The script also opens recent inline XBRL filing documents listed in the submissions API and searches for dimensional XBRL facts. Those rows become `Segment / Geography` rows when the XBRL context includes dimensions such as segment, geography, product, service, business, domestic, international, Express, Freight, or similar members.
+
+## How The Auto-Scrape Works
+
+Run the script:
 
 ```bash
 cd /Users/allisonxu/Desktop/Project
 
-PYTHONPATH=/Users/allisonxu/Desktop/Project/.python_deps \
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
-scripts/run_pipeline.py --config config/repo_pipeline.yml
-
-PYTHONPATH=/Users/allisonxu/Desktop/Project/.python_deps \
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
-scripts/export_git_dataset.py --database outputs/us_company_research.duckdb --output-dir dataset
+/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  scripts/build_fdx_workbook.mjs
 ```
 
-Then commit and push:
+The script then performs this automated process:
+
+1. Looks up `FDX` in the SEC ticker file.
+2. Converts FedEx's CIK to the SEC 10-digit CIK format.
+3. Downloads FedEx submission metadata from the SEC submissions API.
+4. Downloads FedEx companyfacts XBRL from the SEC companyfacts API.
+5. Keeps only 10-K, 10-K/A, 10-Q, and 10-Q/A facts from fiscal year 2018 onward.
+6. Converts raw XBRL concepts into readable workbook columns:
+   - `Statement / Detail Area`
+   - `Metric Group`
+   - `Metric Name`
+   - `Value`
+   - `Unit`
+   - source filing fields
+7. Downloads recent filing HTML documents from SEC archive links.
+8. Parses inline XBRL contexts from those filing documents.
+9. Finds dimensional facts that look like segment, geography, product, service, or business disclosures.
+10. Adds all rows directly into the Excel `Collection` tab.
+11. Creates `Research`, `Company Info`, and `Blank` tabs.
+12. Saves the workbook to OneDrive:
+
+```text
+/Users/allisonxu/OneDrive/文件/Brian/FDX_fedex_sec_collection.xlsx
+```
+
+No manual copy/paste into Excel is required. To refresh the workbook, run the script again. The workbook is regenerated from the latest SEC data available at that time.
+
+## Optional Output Location
+
+By default, the workbook is saved to OneDrive. To save it somewhere else for one run, set `FDX_OUTPUT_DIR`:
 
 ```bash
-git add dataset outputs/workbook_field_inventory.csv outputs/workbook_validation.csv
-git commit -m "Refresh SEC dataset"
-git push
+FDX_OUTPUT_DIR=/Users/allisonxu/Desktop/Project/outputs \
+/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
+  scripts/build_fdx_workbook.mjs
 ```
 
-## Current Limits
+## Segment And Geography Examples
 
-- U.S. companies only.
-- SEC 10-K and 10-Q data only.
-- Some workbook companies are non-U.S. or do not map cleanly to SEC tickers.
-- Raw SEC facts can be noisy; use `curated_metrics.csv` first.
-- RSS feeds and company news flow are not implemented yet.
+Segment and geography data is only available when FedEx tags that detail in inline XBRL.
+
+Example segment dimension:
+
+```text
+StatementBusinessSegmentsAxis=FederalExpressSegmentMember
+```
+
+This means the value is a FedEx disclosed number tagged to the Federal Express segment.
+
+Example product/service dimension:
+
+```text
+ProductOrServiceAxis=BoeingMd11FAircraftMember
+```
+
+This does not mean the workbook is pulling Boeing company data. It means FedEx tagged one of its own filing facts with a product/service member related to Boeing MD-11F aircraft.
+
+The workbook keeps these dimension fields in:
+
+- `Dimensions`
+- `Segment / Geography Member`
+
+That way the number can be filtered, audited, and traced back to the original SEC filing.
+
+## Important Notes
+
+- SEC companyfacts is strongest for standardized line items.
+- Segment and geography detail depends on what the company tags in inline XBRL.
+- The script does not manually invent missing segment/geography values.
+- The `Research` tab is for manual notes and analyst work.
+- If the SEC updates filings or adds new facts, rerun the script to refresh the workbook.
