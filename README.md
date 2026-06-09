@@ -62,9 +62,7 @@ The script will create the output folder if it does not already exist.
 
 ## Workbook Structure
 
-Each company gets one Excel workbook.
-
-The FedEx workbook has these tabs:
+Each company's workbook has these tabs:
 
 - `Collection`: automated SEC/XBRL data.
 - `Research`: manual analyst notes.
@@ -148,14 +146,12 @@ Example product/service dimension:
 ProductOrServiceAxis=BoeingMd11FAircraftMember
 ```
 
-This does not mean the workbook is pulling Boeing company data. It means FedEx tagged one of its own filing facts with a product/service member related to Boeing MD-11F aircraft.
+This means FedEx tagged one of its own filing facts with a product/service member related to Boeing MD-11F aircraft.
 
 The workbook keeps these dimension fields in:
 
 - `Dimensions`
 - `Segment / Geography Member`
-
-That way the number can be filtered, audited, and traced back to the original SEC filing.
 
 ## Troubleshooting
 
@@ -168,11 +164,3 @@ npm install @oai/artifact-tool
 ```
 
 If the SEC blocks or slows requests, wait a few minutes and run the script again. The script includes a short pause between SEC requests, but SEC availability can still vary.
-
-## Important Notes
-
-- SEC companyfacts is strongest for standardized line items.
-- Segment and geography detail depends on what the company tags in inline XBRL.
-- The script does not manually invent missing segment/geography values.
-- The `Research` tab is for manual notes and analyst work.
-- If the SEC updates filings or adds new facts, rerun the script to refresh the workbook.
