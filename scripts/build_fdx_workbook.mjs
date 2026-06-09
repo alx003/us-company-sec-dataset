@@ -3,7 +3,7 @@ import path from "node:path";
 import { SpreadsheetFile, Workbook } from "@oai/artifact-tool";
 
 const ROOT = path.resolve(new URL("..", import.meta.url).pathname);
-const OUTPUT_DIR = process.env.FDX_OUTPUT_DIR || "/Users/allisonxu/OneDrive/文件/Brian";
+const OUTPUT_DIR = process.env.FDX_OUTPUT_DIR || path.join(ROOT, "outputs");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "FDX_fedex_sec_collection.xlsx");
 const USER_AGENT = "alx003 SEC research workbook contact@example.com";
 const TICKER = "FDX";

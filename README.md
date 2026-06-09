@@ -2,6 +2,64 @@
 
 This repo creates one Excel workbook per company from SEC XBRL data. The current workbook is for FedEx, ticker `FDX`.
 
+## Quick Start
+
+1. Install Node.js.
+
+   Download it from [nodejs.org](https://nodejs.org/) if it is not already installed.
+
+2. Clone this repo.
+
+   ```bash
+   git clone https://github.com/alx003/us-company-sec-dataset.git
+   cd us-company-sec-dataset
+   ```
+
+3. Install the spreadsheet dependency.
+
+   ```bash
+   npm install @oai/artifact-tool
+   ```
+
+4. Run the FedEx workbook builder.
+
+   ```bash
+   node scripts/build_fdx_workbook.mjs
+   ```
+
+5. Open the generated workbook.
+
+   ```text
+   outputs/FDX_fedex_sec_collection.xlsx
+   ```
+
+No manual copy/paste into Excel is required. To refresh the workbook later, run the same command again.
+
+## Choose Your Own Output Folder
+
+By default, the workbook is saved to:
+
+```text
+outputs/FDX_fedex_sec_collection.xlsx
+```
+
+To save it somewhere else on your own computer, set `FDX_OUTPUT_DIR` before running the script.
+
+macOS or Linux:
+
+```bash
+FDX_OUTPUT_DIR="$HOME/Desktop/sec-workbooks" node scripts/build_fdx_workbook.mjs
+```
+
+Windows PowerShell:
+
+```powershell
+$env:FDX_OUTPUT_DIR="$env:USERPROFILE\Desktop\sec-workbooks"
+node scripts/build_fdx_workbook.mjs
+```
+
+The script will create the output folder if it does not already exist.
+
 ## Workbook Structure
 
 Each company gets one Excel workbook.
@@ -23,6 +81,8 @@ The `Collection` tab is designed to be readable first, auditable second. The fir
 - `Value`
 - `Unit`
 
+This makes it easier to filter for items such as depreciation, assets, capex, revenue, profit, debt, liabilities, and equity without scanning raw XBRL concept names first.
+
 ## What The Automation Pulls
 
 The script [scripts/build_fdx_workbook.mjs](scripts/build_fdx_workbook.mjs) automatically pulls FedEx data from the SEC.
@@ -43,16 +103,13 @@ The script also opens recent inline XBRL filing documents listed in the submissi
 
 ## How The Auto-Scrape Works
 
-Run the script:
+When you run:
 
 ```bash
-cd /Users/allisonxu/Desktop/Project
-
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  scripts/build_fdx_workbook.mjs
+node scripts/build_fdx_workbook.mjs
 ```
 
-The script then performs this automated process:
+the script performs this automated process:
 
 1. Looks up `FDX` in the SEC ticker file.
 2. Converts FedEx's CIK to the SEC 10-digit CIK format.
@@ -71,3 +128,51 @@ The script then performs this automated process:
 9. Finds dimensional facts that look like segment, geography, product, service, or business disclosures.
 10. Adds all rows directly into the Excel `Collection` tab.
 11. Creates `Research`, `Company Info`, and `Blank` tabs.
+12. Saves the workbook to the selected output folder.
+
+## Segment And Geography Examples
+
+Segment and geography data is only available when FedEx tags that detail in inline XBRL.
+
+Example segment dimension:
+
+```text
+StatementBusinessSegmentsAxis=FederalExpressSegmentMember
+```
+
+This means the value is a FedEx disclosed number tagged to the Federal Express segment.
+
+Example product/service dimension:
+
+```text
+ProductOrServiceAxis=BoeingMd11FAircraftMember
+```
+
+This does not mean the workbook is pulling Boeing company data. It means FedEx tagged one of its own filing facts with a product/service member related to Boeing MD-11F aircraft.
+
+The workbook keeps these dimension fields in:
+
+- `Dimensions`
+- `Segment / Geography Member`
+
+That way the number can be filtered, audited, and traced back to the original SEC filing.
+
+## Troubleshooting
+
+If `node` is not recognized, install Node.js and open a new terminal window.
+
+If `@oai/artifact-tool` is missing, run:
+
+```bash
+npm install @oai/artifact-tool
+```
+
+If the SEC blocks or slows requests, wait a few minutes and run the script again. The script includes a short pause between SEC requests, but SEC availability can still vary.
+
+## Important Notes
+
+- SEC companyfacts is strongest for standardized line items.
+- Segment and geography detail depends on what the company tags in inline XBRL.
+- The script does not manually invent missing segment/geography values.
+- The `Research` tab is for manual notes and analyst work.
+- If the SEC updates filings or adds new facts, rerun the script to refresh the workbook.
