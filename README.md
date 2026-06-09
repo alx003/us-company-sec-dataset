@@ -2,18 +2,6 @@
 
 This repo creates one Excel workbook per company from SEC XBRL data. The current workbook is for FedEx, ticker `FDX`.
 
-The working output location for this project is:
-
-```text
-/Users/allisonxu/OneDrive/文件/Brian
-```
-
-Generated workbook:
-
-```text
-/Users/allisonxu/OneDrive/文件/Brian/FDX_fedex_sec_collection.xlsx
-```
-
 ## Workbook Structure
 
 Each company gets one Excel workbook.
@@ -34,8 +22,6 @@ The `Collection` tab is designed to be readable first, auditable second. The fir
 - `XBRL Label`
 - `Value`
 - `Unit`
-
-This makes it easier to filter for items such as depreciation, assets, capex, revenue, profit, debt, liabilities, and equity without scanning raw XBRL concept names first.
 
 ## What The Automation Pulls
 
@@ -85,55 +71,3 @@ The script then performs this automated process:
 9. Finds dimensional facts that look like segment, geography, product, service, or business disclosures.
 10. Adds all rows directly into the Excel `Collection` tab.
 11. Creates `Research`, `Company Info`, and `Blank` tabs.
-12. Saves the workbook to OneDrive:
-
-```text
-/Users/allisonxu/OneDrive/文件/Brian/FDX_fedex_sec_collection.xlsx
-```
-
-No manual copy/paste into Excel is required. To refresh the workbook, run the script again. The workbook is regenerated from the latest SEC data available at that time.
-
-## Optional Output Location
-
-By default, the workbook is saved to OneDrive. To save it somewhere else for one run, set `FDX_OUTPUT_DIR`:
-
-```bash
-FDX_OUTPUT_DIR=/Users/allisonxu/Desktop/Project/outputs \
-/Users/allisonxu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
-  scripts/build_fdx_workbook.mjs
-```
-
-## Segment And Geography Examples
-
-Segment and geography data is only available when FedEx tags that detail in inline XBRL.
-
-Example segment dimension:
-
-```text
-StatementBusinessSegmentsAxis=FederalExpressSegmentMember
-```
-
-This means the value is a FedEx disclosed number tagged to the Federal Express segment.
-
-Example product/service dimension:
-
-```text
-ProductOrServiceAxis=BoeingMd11FAircraftMember
-```
-
-This does not mean the workbook is pulling Boeing company data. It means FedEx tagged one of its own filing facts with a product/service member related to Boeing MD-11F aircraft.
-
-The workbook keeps these dimension fields in:
-
-- `Dimensions`
-- `Segment / Geography Member`
-
-That way the number can be filtered, audited, and traced back to the original SEC filing.
-
-## Important Notes
-
-- SEC companyfacts is strongest for standardized line items.
-- Segment and geography detail depends on what the company tags in inline XBRL.
-- The script does not manually invent missing segment/geography values.
-- The `Research` tab is for manual notes and analyst work.
-- If the SEC updates filings or adds new facts, rerun the script to refresh the workbook.
