@@ -2,8 +2,6 @@
 
 This project uses **Python** to pull free SEC/XBRL data and create Excel workbooks.
 
-Do **not** run `npm install @oai/artifact-tool`. That package is not public and will fail with a 404 error. Node.js is not needed.
-
 ## What This Gets
 
 For each ticker, the automation creates one Excel workbook with:
@@ -19,14 +17,10 @@ For each ticker, the automation creates one Excel workbook with:
 By default, files are saved to:
 
 ```text
-~/OneDrive/文件/Brian/sec-workbooks
+~/OneDrive/ImportantFiles/Brian/sec-workbooks
 ```
 
 On Allison's Mac, that is usually:
-
-```text
-/Users/allisonxu/Library/CloudStorage/OneDrive-Personal/文件/Brian/sec-workbooks
-```
 
 Other people can choose their own save folder with `--output-dir`.
 
@@ -49,10 +43,10 @@ python3 -m pip install openpyxl requests
 Set your SEC contact email:
 
 ```bash
-export SEC_USER_AGENT="Allison Xu your-email@example.com"
+export SEC_USER_AGENT="email@example.com"
 ```
 
-Use a real email. The SEC expects automated scripts to identify who is making requests.
+The SEC expects automated scripts to identify who is making requests.
 
 ## Create One Company Workbook
 
@@ -65,7 +59,7 @@ python3 scripts/build_company_workbooks.py --ticker FDX
 The file will be saved to:
 
 ```text
-~/OneDrive/文件/Brian/sec-workbooks/FDX_sec_xbrl_workbook.xlsx
+~/OneDrive/ImportantFiles/Brian/sec-workbooks/FDX_sec_xbrl_workbook.xlsx
 ```
 
 Open that file in Excel.
@@ -78,16 +72,10 @@ python3 scripts/build_company_workbooks.py --ticker FDX --ticker UPS --ticker AA
 
 ## Save To A Different Folder
 
-Mac Desktop example:
-
-```bash
-python3 scripts/build_company_workbooks.py --ticker FDX --output-dir "$HOME/Desktop/sec-workbooks"
-```
-
 Mac OneDrive example:
 
 ```bash
-python3 scripts/build_company_workbooks.py --ticker FDX --output-dir "$HOME/Library/CloudStorage/OneDrive-Personal/文件/Brian/sec-workbooks"
+python3 scripts/build_company_workbooks.py --ticker FDX --output-dir "$HOME/Library/CloudStorage/OneDrive-Personal/ImportantFiles/Brian/sec-workbooks"
 ```
 
 Windows PowerShell example:
@@ -107,30 +95,3 @@ python3 scripts/build_company_workbooks.py --ticker FDX
 ```
 
 It overwrites the old workbook with fresh SEC/XBRL data.
-
-## What Not To Do
-
-Do not run:
-
-```bash
-npm install @oai/artifact-tool
-node scripts/build_fdx_workbook.mjs
-```
-
-That old workflow used a Codex-only package and does not work from normal Terminal.
-
-## Troubleshooting
-
-If `python3` is not found, install Python from:
-
-```text
-https://www.python.org/downloads/
-```
-
-If the SEC request fails, wait a few minutes and run the command again.
-
-If the Excel file does not appear, run with an explicit output folder:
-
-```bash
-python3 scripts/build_company_workbooks.py --ticker FDX --output-dir "$HOME/Desktop/sec-workbooks"
-```
