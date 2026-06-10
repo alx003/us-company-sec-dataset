@@ -31,7 +31,7 @@ Open Terminal.
 Go to the project folder:
 
 ```bash
-cd "$HOME/Library/CloudStorage/OneDrive-Personal/文件/Brian"
+cd "$HOME/Library/CloudStorage/OneDrive-Personal/ImportantFiles/Brian"
 ```
 
 Install Python packages:
